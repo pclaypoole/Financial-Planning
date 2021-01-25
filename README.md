@@ -1,18 +1,20 @@
-# Unit 5 - Financial Planning
+# Financial Planning
 
 ![Financial Planner](Images/financial-planner.png)
 
 ## Background
 
-You decided to start a FinTech consultancy firm, and you want to make the difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union, asked you to develop a prototype application to present a demo in the next credit union assembly.
+Create a tool that helps credit union members enhance their financial health. Develop a prototype application to present a demo in the next credit union assembly.
 
 The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonability good retirement plan based on cryptocurrencies, stocks, and bonds.
 
-In this challenge, you will use all the skills you have learned until now, focusing on using APIs as part of the technical solution.
+Focus on using APIs as part of the technical solution.
 
-You will create two financial analysis tools using Jupyter notebooks. The first will be a personal finance planner that will allow user to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
+Create two financial analysis tools:
 
-The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed by stocks and bonds and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
+* The first will be a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
+
+* The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed by stocks and bonds and then run Monte Carlo simulations to project the portfolio performance at 30 years. Anaylze portfolios. 
 
 ---
 
@@ -24,17 +26,15 @@ The second tool will be a retirement planning tool that will use the Alpaca API 
 
 ---
 
-## Instructions
-
 ### Part 1 - Personal Finance Planner
 
-In this section of the challenge, you will create a personal finance planner application. To develop the personal finance planner prototype, you should take into account the following assumptions:
+Personal finance planner application. To develop the personal finance planner prototype, you should take into account the following assumptions:
 
 * The average household income for each member of the credit union is $12,000.
 
 * Every union member has a savings portfolio composed of cryptocurrencies, stocks, and bonds.
 
-Use the starter Jupyter notebook to complete the following steps.
+Complete the following steps:
 
 #### Collect Crypto Prices Using the `requests` Library
 
@@ -68,7 +68,7 @@ Assume the following amount of shares: `200` `AGG` (bonds) and `50` `SPY` (stock
 
 #### Savings Health Analysis
 
-In this section, you will assess the financial health of the credit union's members.
+Assess the financial health of the credit union's members.
 
 1. To analyze savings health, create a DataFrame called `df_savings` with two rows. Store the total value in US dollars of the crypto assets in the first row and the total value of the shares in the second row.
 
@@ -86,9 +86,9 @@ In this section, you will assess the financial health of the credit union's memb
 
 ### Part 2 - Retirement Planning
 
-In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to answer questions about the portfolio.
+Use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to analyze the portfolio.
 
-Follow the steps outlined in the starter notebook to complete the following.
+Complete the following:
 
 #### Monte Carlo Simulation
 
@@ -112,11 +112,9 @@ Fetch the summary statistics from the Monte Carlo simulation results to answer t
 
 2. How would a `50%` increase in the initial investment amount affect the expected portfolio return in dollars at the `95%` lower and upper confidence intervals?
 
-### Optional Challenge - Early Retirement
+### Early Retirement - Option
 
-The CTO of the Credit Union was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CFO starts wondering if the retirement plan could be adjusted to retire earlier than normal.
-
-Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
+Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and re-run the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
 
 ---
 
@@ -132,18 +130,5 @@ Try adjusting the portfolio to either include more risk (a higher stock than bon
 
 * For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years.
 
-* Remember to add the `.env` files to the `.gitignore` configuration to avoid exposing your API keys in your GitHub repository.
+* Remember to add the `.env` files to the `.gitignore` configuration to avoid exposing your API keys.
 
----
-
-### Submission
-
-1. Create a Jupyter Notebook containing your Personal Finance Planner Jupyter notebook.
-
-2. Submit your notebook to a new GitHub repository and create a `README.md` file.
-
-3. Submit the link to your GitHub project to Bootcampspot for grading.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
