@@ -126,7 +126,7 @@ Try adjusting the portfolio to either include more risk (a higher stock than bon
 
 ---
 
-### Hints and Considerations
+### Considerations
 
 * For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years.
 
