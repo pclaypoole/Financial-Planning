@@ -1,9 +1,5 @@
 # Financial Planning
 
-![Financial Planner](Images/financial-planner.png)
-
-## Background
-
 Create a tool that helps credit union members enhance their financial health. Develop a prototype application to present a demo in the next credit union assembly.
 
 The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonability good retirement plan based on cryptocurrencies, stocks, and bonds.
